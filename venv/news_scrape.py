@@ -1,6 +1,8 @@
 # Description: This program scrapes and summarizes news articles from the New York Times.
 
 from newspaper import Article
+# import nltk
+# nltk.download()
 
 
 # Summarizes the article and provides valuable information regarding the article metadata, including images and

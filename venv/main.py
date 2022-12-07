@@ -22,17 +22,16 @@ time.sleep(2)
 content_string = get_content_string(my_url)
 starts, ends = find_occurrences(content_string)
 url_list = get_all_urls(starts, ends, content_string)
-print(url_list)
 
-# for url in url_list:
-#     print("Article URL: " + str(url))
-#     article_summary = summarize_article(url)
-#     find_sentiment(article_summary)
-#     print("------------------------------------------------")
-#     time.sleep(7) 
+for url in url_list:
+    print("Article URL: " + str(url))
+    article_summary = summarize_article(url)
+    find_sentiment(article_summary)
+    print("------------------------------------------------")
+    time.sleep(7) 
 
 
-# print()
-# print("The articles have been successfully extracted!")
-# print("In total, we were able to extract " + str(len(url_list)) + " different articles!")
-# print("Thanks for participating, " + name + "!")
+print()
+print("The articles have been successfully extracted!")
+print("In total, we were able to extract " + str(len(url_list)) + " different articles!")
+print("Thanks for participating, " + name + "!")
